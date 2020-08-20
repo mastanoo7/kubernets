@@ -8,4 +8,4 @@ spec:
   containers:
     - name: c01
       image: ubuntu
-      command: ["/bin/bash", "-c", "while true; do echo hello-mastan; sleep 5; done"]
+      command: ["/bin/bash", "-c" , "while true; do echo hello-mastan; sleep 5; done"]
