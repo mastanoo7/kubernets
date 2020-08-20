@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+meatadata:
+  name: testpod2
+  annotations:
+    description: adding some more information
+spec:
+  containers:
+  - name: c02
+    image: ubuntu

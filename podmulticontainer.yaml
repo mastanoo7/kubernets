@@ -1,0 +1,14 @@
+apiVersion: v1
+metadata:
+  name: testpod3
+  annotations:
+    description:  multi containers
+spec:
+  containers:
+  - name: c03
+    image: ubuntu
+    command:  ["/bin/bash", "-c", "while true; do echo hello-mastan; sleep 5; done"]
+  - name: c04
+    image: ubuntu
+    command:  ["/bin/bash", "-c", "while true; do echo hello-mastan; sleep 5; done"]
+kind: Pod
