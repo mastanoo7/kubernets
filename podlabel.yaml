@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testpod5
+  labels:
+    company: mycompany
+    prod: k8s
+spec:
+  containers:
+  - name: c06
+    image: ubuntu
+    command: ["/bin/bash", "-c", "while true; do echo hello-mastan; sleep 5; done"]
