@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podwithport
+  labels:
+    environment: prod
+spec:
+  containers:
+  - name: c08
+    image: nginx
+    ports:
+    - containerPort: 80
